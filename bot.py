@@ -4,6 +4,7 @@ from langchain_community.llms import Replicate
 from langchain_core.tools import tool
 from langchain import hub
 
+from dotenv import load_dotenv
 import requests
 import os
 import json
