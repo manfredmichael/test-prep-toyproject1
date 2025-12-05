@@ -4,11 +4,9 @@ from langchain_community.llms import Replicate
 from langchain_core.tools import tool
 from langchain import hub
 
-from dotenv import load_dotenv
 import requests
 import os
 import json
-from google.colab import userdata
 
 import sqlite3
 from datetime import datetime, timedelta
