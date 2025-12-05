@@ -317,7 +317,9 @@ def build_agent():
 
 def build_agent():
     load_dotenv()
-    # search_token = os.environ['SEARCH_TOKEN']
+    if "REPLICATE_API_TOKEN" in st.secrets:
+        os.environ["REPLICATE_API_TOKEN"] = st.secrets["REPLICATE_API_TOKEN"]
+   
 
     llm = Replicate(model="anthropic/claude-3.5-haiku")
 
